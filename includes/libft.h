@@ -6,7 +6,7 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 14:32:01 by fluchten          #+#    #+#             */
-/*   Updated: 2023/02/18 16:33:55 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/18 16:40:09 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ typedef struct s_list {
 /* allocate */
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
+/* array */
+char	**ft_arrdup(char **array);
+char	**ft_split(const char *s, char c);
 /* character */
 void	ft_putchar_fd(char c, int fd);
 void	ft_putchar(char c);
@@ -40,7 +43,6 @@ int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putnbr(int n);
-char	**ft_split(const char *s, char c);
 /* lst */
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);

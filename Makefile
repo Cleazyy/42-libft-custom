@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/18 16:34:10 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/18 16:39:23 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,8 @@ OBJS_DIR = objs
 
 SRCS = 	allocate/ft_bzero.c \
 		allocate/ft_calloc.c \
+		array/ft_arrdup.c \
+		array/ft_split.c \
 		character/ft_putchar_fd.c \
 		character/ft_putchar.c \
 		checkers/ft_isalnum.c \
@@ -35,7 +37,6 @@ SRCS = 	allocate/ft_bzero.c \
 		converters/ft_itoa.c \
 		converters/ft_putnbr_fd.c \
 		converters/ft_putnbr.c \
-		converters/ft_split.c \
 		lst/ft_lstadd_back.c \
 		lst/ft_lstadd_front.c \
 		lst/ft_lstclear.c \

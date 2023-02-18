@@ -6,7 +6,7 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 14:32:01 by fluchten          #+#    #+#             */
-/*   Updated: 2023/02/18 16:26:08 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/18 16:31:12 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,11 @@ int		ft_toupper(int c);
 /* converters */
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbr(int n);
 char	**ft_split(const char *s, char c);
 /* fd */
 void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 /* lst */
 void	ft_lstadd_back(t_list **lst, t_list *new);

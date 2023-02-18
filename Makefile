@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/18 16:26:20 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/18 16:30:29 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,9 +33,10 @@ SRCS = 	allocate/ft_bzero.c \
 		checkers/ft_toupper.c \
 		converters/ft_atoi.c \
 		converters/ft_itoa.c \
+		converters/ft_putnbr_fd.c \
+		converters/ft_putnbr.c \
 		converters/ft_split.c \
 		fd/ft_putendl_fd.c \
-		fd/ft_putnbr_fd.c \
 		fd/ft_putstr_fd.c \
 		lst/ft_lstadd_back.c \
 		lst/ft_lstadd_front.c \

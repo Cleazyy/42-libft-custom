@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/18 16:25:22 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/18 16:26:20 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,19 +51,19 @@ SRCS = 	allocate/ft_bzero.c \
 		mem/ft_memcpy.c \
 		mem/ft_memmove.c \
 		mem/ft_memset.c \
-		str/ft_strchr.c \
-		str/ft_strdup.c \
-		str/ft_striteri.c \
-		str/ft_strjoin.c \
-		str/ft_strlcat.c \
-		str/ft_strlcpy.c \
-		str/ft_strlen.c \
-		str/ft_strmapi.c \
-		str/ft_strncmp.c \
-		str/ft_strnstr.c \
-		str/ft_strrchr.c \
-		str/ft_strtrim.c \
-		str/ft_substr.c
+		string/ft_strchr.c \
+		string/ft_strdup.c \
+		string/ft_striteri.c \
+		string/ft_strjoin.c \
+		string/ft_strlcat.c \
+		string/ft_strlcpy.c \
+		string/ft_strlen.c \
+		string/ft_strmapi.c \
+		string/ft_strncmp.c \
+		string/ft_strnstr.c \
+		string/ft_strrchr.c \
+		string/ft_strtrim.c \
+		string/ft_substr.c
 
 OBJS = $(addprefix ${OBJS_DIR}/, ${SRCS:%.c=%.o})
 

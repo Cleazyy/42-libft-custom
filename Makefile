@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/18 16:39:23 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/18 16:42:11 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,6 +55,7 @@ SRCS = 	allocate/ft_bzero.c \
 		string/ft_putstr_fd.c \
 		string/ft_putstr.c \
 		string/ft_strchr.c \
+		string/ft_strdup_size.c \
 		string/ft_strdup.c \
 		string/ft_striteri.c \
 		string/ft_strjoin.c \

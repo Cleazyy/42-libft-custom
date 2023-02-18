@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/18 16:42:11 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/18 16:46:59 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ SRCS = 	allocate/ft_bzero.c \
 		checkers/ft_isascii.c \
 		checkers/ft_isdigit.c \
 		checkers/ft_isprint.c \
+		checkers/ft_iswhitespace.c \
 		checkers/ft_tolower.c \
 		checkers/ft_toupper.c \
 		converters/ft_atoi.c \

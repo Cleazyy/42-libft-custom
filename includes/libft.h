@@ -6,7 +6,7 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 14:32:01 by fluchten          #+#    #+#             */
-/*   Updated: 2023/02/18 16:42:23 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/18 16:47:45 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdbool.h>
 
 typedef struct s_list {
 	void			*content;
@@ -36,6 +37,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+bool	ft_iswhitespace(char c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 /* converters */

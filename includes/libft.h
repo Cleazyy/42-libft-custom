@@ -6,7 +6,7 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 14:32:01 by fluchten          #+#    #+#             */
-/*   Updated: 2023/02/18 16:31:12 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/18 16:33:55 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,6 @@ char	*ft_itoa(int n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putnbr(int n);
 char	**ft_split(const char *s, char c);
-/* fd */
-void	ft_putendl_fd(char *s, int fd);
-void	ft_putstr_fd(char *s, int fd);
 /* lst */
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
@@ -61,6 +58,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 /* string */
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putstr(char *str);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);

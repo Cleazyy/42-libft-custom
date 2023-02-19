@@ -6,7 +6,7 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 14:32:01 by fluchten          #+#    #+#             */
-/*   Updated: 2023/02/18 16:47:45 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/19 16:30:59 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ char	**ft_split(const char *s, char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putchar(char c);
 /* checkers */
+bool	ft_is_closed_quotes(char *str);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);

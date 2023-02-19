@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/19 10:59:48 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/19 16:31:18 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRCS = 	allocate/ft_bzero.c \
 		array/ft_split.c \
 		character/ft_putchar_fd.c \
 		character/ft_putchar.c \
+		checkers/ft_is_closed_quotes.c \
 		checkers/ft_isalnum.c \
 		checkers/ft_isalpha.c \
 		checkers/ft_isascii.c \

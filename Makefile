@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/19 10:49:01 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/19 10:59:48 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,8 +86,7 @@ COLOR_RESET = \033[0m
 all: ${NAME}
 
 ${OBJS_DIR}:
-	@mkdir -p ${@D}
-	@echo "${COLOR_PURPLE}${LIBFT} ${COLOR_GREEN}COMPILING LIBFT...${COLOR_RESET}"
+	@echo "\n${COLOR_PURPLE}${LIBFT} ${COLOR_GREEN}COMPILING ->${COLOR_RESET}"
 
 ${OBJS_DIR}/%.o: ${SRCS_DIR}/%.c | ${OBJS_DIR}
 	@mkdir -p ${@D}

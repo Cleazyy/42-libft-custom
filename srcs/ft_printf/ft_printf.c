@@ -6,30 +6,30 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 09:02:41 by fluchten          #+#    #+#             */
-/*   Updated: 2023/01/25 19:10:32 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/19 11:20:14 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_print_format(va_list ap, char c, int len)
+static int	print_format(va_list ap, char c, int len)
 {
 	if (c == 'c')
-		len = ft_putchar(va_arg(ap, int));
+		len = print_char(va_arg(ap, int));
 	else if (c == 's')
-		len = ft_putstr(va_arg(ap, char *));
+		len = print_str(va_arg(ap, char *));
 	else if (c == 'p')
-		len = ft_putptr(va_arg(ap, unsigned long));
+		len = print_ptr(va_arg(ap, unsigned long));
 	else if (c == 'd' || c == 'i')
-		len = ft_putnbr(va_arg(ap, int));
+		len = print_nbr(va_arg(ap, int));
 	else if (c == 'u')
-		len = ft_putunbr(va_arg(ap, unsigned int));
+		len = print_unbr(va_arg(ap, unsigned int));
 	else if (c == 'x')
-		len = ft_putnbr_base(va_arg(ap, unsigned int), HEXA_LOWER);
+		len = print_nbr_base(va_arg(ap, unsigned int), HEXA_LOWER);
 	else if (c == 'X')
-		len = ft_putnbr_base(va_arg(ap, unsigned int), HEXA_UPPER);
+		len = print_nbr_base(va_arg(ap, unsigned int), HEXA_UPPER);
 	else if (c == '%')
-		len = ft_putchar('%');
+		len = print_char('%');
 	return (len);
 }
 
@@ -45,11 +45,11 @@ int	ft_printf(const char *str, ...)
 	while (str[++i])
 	{
 		if (str[i] != '%')
-			len += ft_putchar(str[i]);
+			len += print_char(str[i]);
 		else if (str[i] == '%')
 		{
 			i++;
-			len += ft_print_format(ap, str[i], len);
+			len += print_format(ap, str[i], len);
 		}
 	}
 	va_end(ap);

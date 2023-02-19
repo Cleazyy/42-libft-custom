@@ -6,11 +6,12 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/02/18 16:46:59 by fluchten         ###   ########.fr        #
+#    Updated: 2023/02/19 10:37:25 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+LIBFT = libft
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -72,30 +73,34 @@ SRCS = 	allocate/ft_bzero.c \
 
 OBJS = $(addprefix ${OBJS_DIR}/, ${SRCS:%.c=%.o})
 
-COLOR_CYAN = \033[1;36m
+COLOR_PURPLE = \033[1;35m
 COLOR_RED = \033[0;31m
 COLOR_GREEN	= \033[0;32m
 COLOR_RESET = \033[0m
 
 all: ${NAME}
 
-${OBJS_DIR}/%.o: ${SRCS_DIR}/%.c
+${OBJS_DIR}:
+	@mkdir -p ${@D}
+	@echo "${COLOR_PURPLE}${LIBFT} ${COLOR_GREEN}COMPILING LIBFT...${COLOR_RESET}"
+
+${OBJS_DIR}/%.o: ${SRCS_DIR}/%.c | ${OBJS_DIR}
 	@mkdir -p ${@D}
 	@${CC} ${CFLAGS} -I ${INC_DIR} -c $< -o $@
 	@echo "${COLOR_GREEN}.${COLOR_RESET}\c"
 
 ${NAME}: ${OBJS}
 	@ar -rcs ${NAME} ${OBJS}
-	@echo "\n${COLOR_CYAN}${NAME} ${COLOR_GREEN}${OBJS_DIR} were created${COLOR_RESET}"
-	@echo "${COLOR_CYAN}${NAME} ${COLOR_GREEN}${NAME} was created${COLOR_RESET}"
+	@echo "\n${COLOR_PURPLE}${LIBFT} ${COLOR_GREEN}${OBJS_DIR} were created${COLOR_RESET}"
+	@echo "${COLOR_PURPLE}${LIBFT} ${COLOR_GREEN}${NAME} was created${COLOR_RESET}"
 
 clean:
 	@${RM} ${OBJS_DIR}
-	@echo "${COLOR_CYAN}${NAME} ${COLOR_RED}${OBJS_DIR} were deleted${COLOR_RESET}"
+	@echo "${COLOR_PURPLE}${LIBFT} ${COLOR_RED}${OBJS_DIR} were deleted${COLOR_RESET}"
 
 fclean: clean
 	@${RM} ${NAME}
-	@echo "${COLOR_CYAN}${NAME} ${COLOR_RED}${NAME} was deleted${COLOR_RESET}"
+	@echo "${COLOR_PURPLE}${LIBFT} ${COLOR_RED}${NAME} was deleted${COLOR_RESET}"
 
 re: fclean all
 

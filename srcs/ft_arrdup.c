@@ -6,7 +6,7 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 12:51:32 by fluchten          #+#    #+#             */
-/*   Updated: 2023/02/18 16:39:07 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/20 16:27:11 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	**ft_arrdup(char **array)
 	len = 0;
 	while (array[len])
 		len++;
-	final = malloc(sizeof(char *) * (len + 1));
+	final = ft_calloc(sizeof(char *), (len + 1));
 	if (!final)
 		return (NULL);
 	i = 0;

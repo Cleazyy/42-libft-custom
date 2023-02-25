@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_arrdup.c                                        :+:      :+:    :+:   */
+/*   ft_array_dup.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 12:51:32 by fluchten          #+#    #+#             */
-/*   Updated: 2023/02/20 16:27:11 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/02/25 10:25:17 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	free_arrdup(char **array)
+static void	free_array_dup(char **array)
 {
 	int	i;
 
@@ -25,7 +25,7 @@ static void	free_arrdup(char **array)
 	free(array);
 }
 
-char	**ft_arrdup(char **array)
+char	**ft_array_dup(char **array)
 {
 	char	**final;
 	size_t	len;
@@ -43,7 +43,7 @@ char	**ft_arrdup(char **array)
 		final[i] = ft_strdup(array[i]);
 		if (!final[i])
 		{
-			free_arrdup(final);
+			free_array_dup(final);
 			return (NULL);
 		}
 		i++;

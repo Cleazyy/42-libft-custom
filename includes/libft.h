@@ -6,7 +6,7 @@
 /*   By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 14:32:01 by fluchten          #+#    #+#             */
-/*   Updated: 2023/03/03 11:01:35 by fluchten         ###   ########.fr       */
+/*   Updated: 2023/03/03 11:04:33 by fluchten         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,5 +76,6 @@ int		ft_isquote(int c);
 bool	ft_iswhitespace(char c);
 int		ft_print_error(char *str);
 bool	ft_str_isdigits(char *str);
+char	*ft_strjoin_char(char *str, char c);
 
 #endif

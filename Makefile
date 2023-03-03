@@ -6,7 +6,7 @@
 #    By: fluchten <fluchten@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 15:03:07 by fluchten          #+#    #+#              #
-#    Updated: 2023/03/03 11:02:12 by fluchten         ###   ########.fr        #
+#    Updated: 2023/03/03 11:04:55 by fluchten         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,7 @@ SRCS =	ft_printf/ft_printf_utils1.c \
 		ft_strchr.c \
 		ft_strdup.c \
 		ft_striteri.c \
+		ft_strjoin_char.c \
 		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
